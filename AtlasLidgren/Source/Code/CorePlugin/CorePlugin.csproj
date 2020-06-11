@@ -39,11 +39,23 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Atlas.core">
+      <HintPath>..\..\..\Plugins\Atlas.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Blue.core">
+      <HintPath>..\..\..\Plugins\Blue.core.dll</HintPath>
+    </Reference>
+    <Reference Include="BlueInput.core">
+      <HintPath>..\..\..\Plugins\BlueInput.core.dll</HintPath>
+    </Reference>
     <Reference Include="Duality">
       <HintPath>..\..\..\Duality.dll</HintPath>
     </Reference>
     <Reference Include="DualityPrimitives">
       <HintPath>..\..\..\DualityPrimitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\..\..\Plugins\Lidgren.Network.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
