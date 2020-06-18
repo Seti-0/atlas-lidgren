@@ -29,6 +29,10 @@
             <scale dataType="Float">1</scale>
             <scaleAbs dataType="Float">1</scaleAbs>
           </item>
+          <item dataType="Struct" type="Duality.Components.VelocityTracker" id="1221651086">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">3445483915</gameobj>
+          </item>
           <item dataType="Struct" type="Duality.Components.Camera" id="696903096">
             <active dataType="Bool">true</active>
             <clearColor dataType="Struct" type="Duality.Drawing.ColorRgba" />
@@ -50,10 +54,6 @@
               <Y dataType="Float">0</Y>
             </targetRect>
             <visibilityMask dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="All" value="4294967295" />
-          </item>
-          <item dataType="Struct" type="Duality.Components.VelocityTracker" id="1221651086">
-            <active dataType="Bool">true</active>
-            <gameobj dataType="ObjectRef">3445483915</gameobj>
           </item>
           <item dataType="Struct" type="Duality.Components.SoundListener" id="1183169146">
             <active dataType="Bool">true</active>
@@ -194,8 +194,8 @@
                                     <offset dataType="Float">2</offset>
                                     <pixelGrid dataType="Bool">false</pixelGrid>
                                     <rect dataType="Struct" type="Duality.Rect">
-                                      <H dataType="Float">529</H>
-                                      <W dataType="Float">797</W>
+                                      <H dataType="Float">20</H>
+                                      <W dataType="Float">20</W>
                                       <X dataType="Float">10</X>
                                       <Y dataType="Float">10</Y>
                                     </rect>
@@ -212,11 +212,8 @@
                                       <Y dataType="Float">20</Y>
                                       <Z dataType="Float">0</Z>
                                     </_offset>
-                                    <_render dataType="Bool">true</_render>
-                                    <_size dataType="Struct" type="Duality.Vector2">
-                                      <X dataType="Float">8</X>
-                                      <Y dataType="Float">17</Y>
-                                    </_size>
+                                    <_render dataType="Bool">false</_render>
+                                    <_size dataType="Struct" type="Duality.Vector2" />
                                     <active dataType="Bool">true</active>
                                     <blockAlign dataType="Enum" type="Duality.Alignment" name="TopLeft" value="5" />
                                     <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
@@ -238,8 +235,8 @@
                                       </fonts>
                                       <icons />
                                       <lineAlign dataType="Enum" type="Duality.Alignment" name="Left" value="1" />
-                                      <maxHeight dataType="Int">17</maxHeight>
-                                      <maxWidth dataType="Int">8</maxWidth>
+                                      <maxHeight dataType="Int">0</maxHeight>
+                                      <maxWidth dataType="Int">0</maxWidth>
                                       <sourceText dataType="String"></sourceText>
                                       <wrapMode dataType="Enum" type="Duality.Drawing.FormattedText+WrapMode" name="Word" value="1" />
                                     </text>
@@ -254,8 +251,8 @@
                                         <Z dataType="Float">0</Z>
                                       </_layoutPosition>
                                       <_layoutSize dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">817</X>
-                                        <Y dataType="Float">549</Y>
+                                        <X dataType="Float">40</X>
+                                        <Y dataType="Float">40</Y>
                                       </_layoutSize>
                                       <_x003C_BackgroundDepth_x003E_k__BackingField dataType="Float">1</_x003C_BackgroundDepth_x003E_k__BackingField>
                                       <_x003C_BackgroundDepthOffset_x003E_k__BackingField dataType="Float">2</_x003C_BackgroundDepthOffset_x003E_k__BackingField>
@@ -265,8 +262,8 @@
                                         <Z dataType="Float">0</Z>
                                       </_x003C_BackgroundPosition_x003E_k__BackingField>
                                       <_x003C_BackgroundSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">797</X>
-                                        <Y dataType="Float">529</Y>
+                                        <X dataType="Float">20</X>
+                                        <Y dataType="Float">20</Y>
                                       </_x003C_BackgroundSize_x003E_k__BackingField>
                                       <_x003C_ContentDepth_x003E_k__BackingField dataType="Float">1</_x003C_ContentDepth_x003E_k__BackingField>
                                       <_x003C_ContentDepthOffset_x003E_k__BackingField dataType="Float">1</_x003C_ContentDepthOffset_x003E_k__BackingField>
@@ -275,10 +272,7 @@
                                         <Y dataType="Float">154</Y>
                                         <Z dataType="Float">0</Z>
                                       </_x003C_ContentPosition_x003E_k__BackingField>
-                                      <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">8</X>
-                                        <Y dataType="Float">17</Y>
-                                      </_x003C_ContentSize_x003E_k__BackingField>
+                                      <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2" />
                                       <_x003C_Depth_x003E_k__BackingField dataType="Float">2</_x003C_Depth_x003E_k__BackingField>
                                       <_x003C_DepthOffset_x003E_k__BackingField dataType="Float">2</_x003C_DepthOffset_x003E_k__BackingField>
                                       <_x003C_Position_x003E_k__BackingField dataType="Struct" type="Duality.Vector3">
@@ -287,8 +281,8 @@
                                         <Z dataType="Float">0</Z>
                                       </_x003C_Position_x003E_k__BackingField>
                                       <_x003C_Size_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">817</X>
-                                        <Y dataType="Float">549</Y>
+                                        <X dataType="Float">40</X>
+                                        <Y dataType="Float">40</Y>
                                       </_x003C_Size_x003E_k__BackingField>
                                       <_x003C_UseLayoutInfo_x003E_k__BackingField dataType="Bool">true</_x003C_UseLayoutInfo_x003E_k__BackingField>
                                     </_dimensions>
@@ -444,12 +438,7 @@
                               <gameobj dataType="ObjectRef">2893521423</gameobj>
                               <offset dataType="Float">3</offset>
                               <pixelGrid dataType="Bool">false</pixelGrid>
-                              <rect dataType="Struct" type="Duality.Rect">
-                                <H dataType="Float">549</H>
-                                <W dataType="Float">817</W>
-                                <X dataType="Float">0</X>
-                                <Y dataType="Float">0</Y>
-                              </rect>
+                              <rect dataType="Struct" type="Duality.Rect" />
                               <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
                               <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
                                 <contentPath dataType="String">Default:Material:SolidWhite</contentPath>
@@ -467,10 +456,7 @@
                                   <Y dataType="Float">134</Y>
                                   <Z dataType="Float">0</Z>
                                 </_layoutPosition>
-                                <_layoutSize dataType="Struct" type="Duality.Vector2">
-                                  <X dataType="Float">817</X>
-                                  <Y dataType="Float">549</Y>
-                                </_layoutSize>
+                                <_layoutSize dataType="Struct" type="Duality.Vector2" />
                                 <_x003C_BackgroundDepth_x003E_k__BackingField dataType="Float">1</_x003C_BackgroundDepth_x003E_k__BackingField>
                                 <_x003C_BackgroundDepthOffset_x003E_k__BackingField dataType="Float">3</_x003C_BackgroundDepthOffset_x003E_k__BackingField>
                                 <_x003C_BackgroundPosition_x003E_k__BackingField dataType="Struct" type="Duality.Vector3">
@@ -478,10 +464,7 @@
                                   <Y dataType="Float">134</Y>
                                   <Z dataType="Float">0</Z>
                                 </_x003C_BackgroundPosition_x003E_k__BackingField>
-                                <_x003C_BackgroundSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                  <X dataType="Float">817</X>
-                                  <Y dataType="Float">549</Y>
-                                </_x003C_BackgroundSize_x003E_k__BackingField>
+                                <_x003C_BackgroundSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2" />
                                 <_x003C_ContentDepth_x003E_k__BackingField dataType="Float">2</_x003C_ContentDepth_x003E_k__BackingField>
                                 <_x003C_ContentDepthOffset_x003E_k__BackingField dataType="Float">2</_x003C_ContentDepthOffset_x003E_k__BackingField>
                                 <_x003C_ContentPosition_x003E_k__BackingField dataType="Struct" type="Duality.Vector3">
@@ -489,10 +472,7 @@
                                   <Y dataType="Float">134</Y>
                                   <Z dataType="Float">0</Z>
                                 </_x003C_ContentPosition_x003E_k__BackingField>
-                                <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                  <X dataType="Float">817</X>
-                                  <Y dataType="Float">549</Y>
-                                </_x003C_ContentSize_x003E_k__BackingField>
+                                <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2" />
                                 <_x003C_Depth_x003E_k__BackingField dataType="Float">3</_x003C_Depth_x003E_k__BackingField>
                                 <_x003C_DepthOffset_x003E_k__BackingField dataType="Float">3</_x003C_DepthOffset_x003E_k__BackingField>
                                 <_x003C_Position_x003E_k__BackingField dataType="Struct" type="Duality.Vector3">
@@ -500,10 +480,7 @@
                                   <Y dataType="Float">134</Y>
                                   <Z dataType="Float">0</Z>
                                 </_x003C_Position_x003E_k__BackingField>
-                                <_x003C_Size_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                  <X dataType="Float">817</X>
-                                  <Y dataType="Float">549</Y>
-                                </_x003C_Size_x003E_k__BackingField>
+                                <_x003C_Size_x003E_k__BackingField dataType="Struct" type="Duality.Vector2" />
                                 <_x003C_UseLayoutInfo_x003E_k__BackingField dataType="Bool">true</_x003C_UseLayoutInfo_x003E_k__BackingField>
                               </_dimensions>
                               <_direction dataType="Enum" type="Soulstone.Duality.Plugins.Blue.Components.FlexDirection" name="Row" value="0" />
@@ -581,36 +558,36 @@
                               <active dataType="Bool">true</active>
                               <gameobj dataType="ObjectRef">2893521423</gameobj>
                             </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Arke.Testing.TestConsole" id="1575495175">
-                              <_entries dataType="Struct" type="System.Collections.Generic.List`1[[Soulstone.Duality.Plugins.Arke.Testing.TestConsole+EntryBuilder]]" id="663423149">
-                                <_items dataType="Array" type="Soulstone.Duality.Plugins.Arke.Testing.TestConsole+EntryBuilder[]" id="3283370854" length="512">
-                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Arke.Testing.TestConsole+EntryBuilder" id="3122898816">
-                                    <Subject dataType="Struct" type="Soulstone.Duality.Plugins.Arke.Testing.TestConsole+Entry" id="3235119516">
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.TestConsole" id="2303525114">
+                              <_entries dataType="Struct" type="System.Collections.Generic.List`1[[Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.TestConsole+EntryBuilder]]" id="3234275804">
+                                <_items dataType="Array" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.TestConsole+EntryBuilder[]" id="141874884" length="512">
+                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.TestConsole+EntryBuilder" id="858836804">
+                                    <Subject dataType="Struct" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.TestConsole+Entry" id="4214005316">
                                       <Bookmark />
-                                      <Category dataType="Enum" type="Soulstone.Duality.Plugins.Arke.Testing.Category" name="Info" value="4" />
+                                      <Category dataType="Enum" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.Category" name="Info" value="4" />
                                       <Content dataType="String">Hello World!/n</Content>
                                       <DateTime dataType="Struct" type="System.DateTime">
-                                        <dateData dataType="ULong">9860645958896271576</dateData>
+                                        <dateData dataType="ULong">9860652873657433179</dateData>
                                       </DateTime>
                                     </Subject>
                                   </item>
                                 </_items>
                                 <_size dataType="Int">1</_size>
                               </_entries>
-                              <_x003C_Colors_x003E_k__BackingField dataType="Struct" type="System.Collections.Generic.Dictionary`2[[Soulstone.Duality.Plugins.Arke.Testing.Category],[Duality.Drawing.ColorRgba]]" id="2542308216" surrogate="true">
+                              <_x003C_Colors_x003E_k__BackingField dataType="Struct" type="System.Collections.Generic.Dictionary`2[[Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.Category],[Duality.Drawing.ColorRgba]]" id="2625729814" surrogate="true">
                                 <header />
                                 <body>
-                                  <keys dataType="Array" type="System.Object[]" id="3698088391">
-                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Arke.Testing.Category" name="Error" value="0" />
-                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Arke.Testing.Category" name="Warning" value="1" />
-                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Arke.Testing.Category" name="Success" value="2" />
-                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Arke.Testing.Category" name="Special" value="3" />
-                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Arke.Testing.Category" name="Info" value="4" />
-                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Arke.Testing.Category" name="Aside" value="5" />
-                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Arke.Testing.Category" name="Debug" value="6" />
-                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Arke.Testing.Category" name="Fine" value="7" />
+                                  <keys dataType="Array" type="System.Object[]" id="479722230">
+                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.Category" name="Error" value="0" />
+                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.Category" name="Warning" value="1" />
+                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.Category" name="Success" value="2" />
+                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.Category" name="Special" value="3" />
+                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.Category" name="Info" value="4" />
+                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.Category" name="Aside" value="5" />
+                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.Category" name="Debug" value="6" />
+                                    <item dataType="Enum" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.Category" name="Fine" value="7" />
                                   </keys>
-                                  <values dataType="Array" type="System.Object[]" id="1898232064">
+                                  <values dataType="Array" type="System.Object[]" id="657134106">
                                     <item dataType="Struct" type="Duality.Drawing.ColorRgba">
                                       <A dataType="Byte">255</A>
                                       <B dataType="Byte">0</B>
@@ -673,13 +650,13 @@
                           <header />
                           <body>
                             <keys dataType="Array" type="System.Object[]" id="2470618772">
-                              <item dataType="Type" id="1427319652" value="Soulstone.Duality.Plugins.Arke.Testing.TestConsole" />
+                              <item dataType="Type" id="1427319652" value="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.TestConsole" />
                               <item dataType="ObjectRef">3654915430</item>
                               <item dataType="ObjectRef">1282515662</item>
                               <item dataType="Type" id="2367875606" value="Soulstone.Duality.Plugins.Blue.Components.FlexLayout" />
                             </keys>
                             <values dataType="Array" type="System.Object[]" id="3098196022">
-                              <item dataType="ObjectRef">1575495175</item>
+                              <item dataType="ObjectRef">2303525114</item>
                               <item dataType="ObjectRef">2950798641</item>
                               <item dataType="ObjectRef">33635778</item>
                               <item dataType="ObjectRef">2818679680</item>
@@ -1260,7 +1237,7 @@
                                     <pixelGrid dataType="Bool">false</pixelGrid>
                                     <rect dataType="Struct" type="Duality.Rect">
                                       <H dataType="Float">37</H>
-                                      <W dataType="Float">645</W>
+                                      <W dataType="Float">20</W>
                                       <X dataType="Float">10</X>
                                       <Y dataType="Float">10</Y>
                                     </rect>
@@ -1277,9 +1254,9 @@
                                       <Y dataType="Float">20</Y>
                                       <Z dataType="Float">0</Z>
                                     </_offset>
-                                    <_render dataType="Bool">true</_render>
+                                    <_render dataType="Bool">false</_render>
                                     <_size dataType="Struct" type="Duality.Vector2">
-                                      <X dataType="Float">88</X>
+                                      <X dataType="Float">0</X>
                                       <Y dataType="Float">17</Y>
                                     </_size>
                                     <active dataType="Bool">true</active>
@@ -1304,7 +1281,7 @@
                                       <icons />
                                       <lineAlign dataType="Enum" type="Duality.Alignment" name="Left" value="1" />
                                       <maxHeight dataType="Int">17</maxHeight>
-                                      <maxWidth dataType="Int">88</maxWidth>
+                                      <maxWidth dataType="Int">0</maxWidth>
                                       <sourceText dataType="String">Hello World</sourceText>
                                       <wrapMode dataType="Enum" type="Duality.Drawing.FormattedText+WrapMode" name="Word" value="1" />
                                     </text>
@@ -1319,7 +1296,7 @@
                                         <Z dataType="Float">0</Z>
                                       </_layoutPosition>
                                       <_layoutSize dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">665</X>
+                                        <X dataType="Float">40</X>
                                         <Y dataType="Float">57</Y>
                                       </_layoutSize>
                                       <_x003C_BackgroundDepth_x003E_k__BackingField dataType="Float">1</_x003C_BackgroundDepth_x003E_k__BackingField>
@@ -1330,7 +1307,7 @@
                                         <Z dataType="Float">0</Z>
                                       </_x003C_BackgroundPosition_x003E_k__BackingField>
                                       <_x003C_BackgroundSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">645</X>
+                                        <X dataType="Float">20</X>
                                         <Y dataType="Float">37</Y>
                                       </_x003C_BackgroundSize_x003E_k__BackingField>
                                       <_x003C_ContentDepth_x003E_k__BackingField dataType="Float">1</_x003C_ContentDepth_x003E_k__BackingField>
@@ -1341,7 +1318,7 @@
                                         <Z dataType="Float">0</Z>
                                       </_x003C_ContentPosition_x003E_k__BackingField>
                                       <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">88</X>
+                                        <X dataType="Float">0</X>
                                         <Y dataType="Float">17</Y>
                                       </_x003C_ContentSize_x003E_k__BackingField>
                                       <_x003C_Depth_x003E_k__BackingField dataType="Float">2</_x003C_Depth_x003E_k__BackingField>
@@ -1352,7 +1329,7 @@
                                         <Z dataType="Float">0</Z>
                                       </_x003C_Position_x003E_k__BackingField>
                                       <_x003C_Size_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">665</X>
+                                        <X dataType="Float">40</X>
                                         <Y dataType="Float">57</Y>
                                       </_x003C_Size_x003E_k__BackingField>
                                       <_x003C_UseLayoutInfo_x003E_k__BackingField dataType="Bool">true</_x003C_UseLayoutInfo_x003E_k__BackingField>
@@ -1551,7 +1528,7 @@
                               <pixelGrid dataType="Bool">false</pixelGrid>
                               <rect dataType="Struct" type="Duality.Rect">
                                 <H dataType="Float">57</H>
-                                <W dataType="Float">817</W>
+                                <W dataType="Float">0</W>
                                 <X dataType="Float">0</X>
                                 <Y dataType="Float">0</Y>
                               </rect>
@@ -1573,7 +1550,7 @@
                                   <Z dataType="Float">0</Z>
                                 </_layoutPosition>
                                 <_layoutSize dataType="Struct" type="Duality.Vector2">
-                                  <X dataType="Float">817</X>
+                                  <X dataType="Float">0</X>
                                   <Y dataType="Float">57</Y>
                                 </_layoutSize>
                                 <_x003C_BackgroundDepth_x003E_k__BackingField dataType="Float">1</_x003C_BackgroundDepth_x003E_k__BackingField>
@@ -1584,7 +1561,7 @@
                                   <Z dataType="Float">0</Z>
                                 </_x003C_BackgroundPosition_x003E_k__BackingField>
                                 <_x003C_BackgroundSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                  <X dataType="Float">817</X>
+                                  <X dataType="Float">0</X>
                                   <Y dataType="Float">57</Y>
                                 </_x003C_BackgroundSize_x003E_k__BackingField>
                                 <_x003C_ContentDepth_x003E_k__BackingField dataType="Float">2</_x003C_ContentDepth_x003E_k__BackingField>
@@ -1595,7 +1572,7 @@
                                   <Z dataType="Float">0</Z>
                                 </_x003C_ContentPosition_x003E_k__BackingField>
                                 <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                  <X dataType="Float">817</X>
+                                  <X dataType="Float">0</X>
                                   <Y dataType="Float">57</Y>
                                 </_x003C_ContentSize_x003E_k__BackingField>
                                 <_x003C_Depth_x003E_k__BackingField dataType="Float">3</_x003C_Depth_x003E_k__BackingField>
@@ -1606,7 +1583,7 @@
                                   <Z dataType="Float">0</Z>
                                 </_x003C_Position_x003E_k__BackingField>
                                 <_x003C_Size_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                  <X dataType="Float">817</X>
+                                  <X dataType="Float">0</X>
                                   <Y dataType="Float">57</Y>
                                 </_x003C_Size_x003E_k__BackingField>
                                 <_x003C_UseLayoutInfo_x003E_k__BackingField dataType="Bool">true</_x003C_UseLayoutInfo_x003E_k__BackingField>
@@ -2003,7 +1980,7 @@
                                     <pixelGrid dataType="Bool">false</pixelGrid>
                                     <rect dataType="Struct" type="Duality.Rect">
                                       <H dataType="Float">37</H>
-                                      <W dataType="Float">256.5</W>
+                                      <W dataType="Float">20</W>
                                       <X dataType="Float">10</X>
                                       <Y dataType="Float">10</Y>
                                     </rect>
@@ -2020,9 +1997,9 @@
                                       <Y dataType="Float">20</Y>
                                       <Z dataType="Float">0</Z>
                                     </_offset>
-                                    <_render dataType="Bool">true</_render>
+                                    <_render dataType="Bool">false</_render>
                                     <_size dataType="Struct" type="Duality.Vector2">
-                                      <X dataType="Float">72</X>
+                                      <X dataType="Float">0</X>
                                       <Y dataType="Float">17</Y>
                                     </_size>
                                     <active dataType="Bool">true</active>
@@ -2047,7 +2024,7 @@
                                       <icons />
                                       <lineAlign dataType="Enum" type="Duality.Alignment" name="Left" value="1" />
                                       <maxHeight dataType="Int">17</maxHeight>
-                                      <maxWidth dataType="Int">72</maxWidth>
+                                      <maxWidth dataType="Int">0</maxWidth>
                                       <sourceText dataType="String">127.0.0.1</sourceText>
                                       <wrapMode dataType="Enum" type="Duality.Drawing.FormattedText+WrapMode" name="Word" value="1" />
                                     </text>
@@ -2062,7 +2039,7 @@
                                         <Z dataType="Float">0</Z>
                                       </_layoutPosition>
                                       <_layoutSize dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">276.5</X>
+                                        <X dataType="Float">40</X>
                                         <Y dataType="Float">57</Y>
                                       </_layoutSize>
                                       <_x003C_BackgroundDepth_x003E_k__BackingField dataType="Float">1</_x003C_BackgroundDepth_x003E_k__BackingField>
@@ -2073,7 +2050,7 @@
                                         <Z dataType="Float">0</Z>
                                       </_x003C_BackgroundPosition_x003E_k__BackingField>
                                       <_x003C_BackgroundSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">256.5</X>
+                                        <X dataType="Float">20</X>
                                         <Y dataType="Float">37</Y>
                                       </_x003C_BackgroundSize_x003E_k__BackingField>
                                       <_x003C_ContentDepth_x003E_k__BackingField dataType="Float">1</_x003C_ContentDepth_x003E_k__BackingField>
@@ -2084,7 +2061,7 @@
                                         <Z dataType="Float">0</Z>
                                       </_x003C_ContentPosition_x003E_k__BackingField>
                                       <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">72</X>
+                                        <X dataType="Float">0</X>
                                         <Y dataType="Float">17</Y>
                                       </_x003C_ContentSize_x003E_k__BackingField>
                                       <_x003C_Depth_x003E_k__BackingField dataType="Float">2</_x003C_Depth_x003E_k__BackingField>
@@ -2095,7 +2072,7 @@
                                         <Z dataType="Float">0</Z>
                                       </_x003C_Position_x003E_k__BackingField>
                                       <_x003C_Size_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">276.5</X>
+                                        <X dataType="Float">40</X>
                                         <Y dataType="Float">57</Y>
                                       </_x003C_Size_x003E_k__BackingField>
                                       <_x003C_UseLayoutInfo_x003E_k__BackingField dataType="Bool">true</_x003C_UseLayoutInfo_x003E_k__BackingField>
@@ -2261,12 +2238,12 @@
                                     <gameobj dataType="ObjectRef">341369751</gameobj>
                                     <ignoreParent dataType="Bool">false</ignoreParent>
                                     <pos dataType="Struct" type="Duality.Vector3">
-                                      <X dataType="Float">528.5</X>
+                                      <X dataType="Float">292</X>
                                       <Y dataType="Float">0</Y>
                                       <Z dataType="Float">0</Z>
                                     </pos>
                                     <posAbs dataType="Struct" type="Duality.Vector3">
-                                      <X dataType="Float">548.5</X>
+                                      <X dataType="Float">312</X>
                                       <Y dataType="Float">20</Y>
                                       <Z dataType="Float">0</Z>
                                     </posAbs>
@@ -2348,7 +2325,7 @@
                                     <_dimensions dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Parameters.Dimensions" id="34856227">
                                       <_layoutDepthOffset dataType="Float">2</_layoutDepthOffset>
                                       <_layoutPosition dataType="Struct" type="Duality.Vector3">
-                                        <X dataType="Float">548.5</X>
+                                        <X dataType="Float">312</X>
                                         <Y dataType="Float">20</Y>
                                         <Z dataType="Float">0</Z>
                                       </_layoutPosition>
@@ -2359,7 +2336,7 @@
                                       <_x003C_BackgroundDepth_x003E_k__BackingField dataType="Float">1</_x003C_BackgroundDepth_x003E_k__BackingField>
                                       <_x003C_BackgroundDepthOffset_x003E_k__BackingField dataType="Float">2</_x003C_BackgroundDepthOffset_x003E_k__BackingField>
                                       <_x003C_BackgroundPosition_x003E_k__BackingField dataType="Struct" type="Duality.Vector3">
-                                        <X dataType="Float">558.5</X>
+                                        <X dataType="Float">322</X>
                                         <Y dataType="Float">30</Y>
                                         <Z dataType="Float">0</Z>
                                       </_x003C_BackgroundPosition_x003E_k__BackingField>
@@ -2370,7 +2347,7 @@
                                       <_x003C_ContentDepth_x003E_k__BackingField dataType="Float">1</_x003C_ContentDepth_x003E_k__BackingField>
                                       <_x003C_ContentDepthOffset_x003E_k__BackingField dataType="Float">1</_x003C_ContentDepthOffset_x003E_k__BackingField>
                                       <_x003C_ContentPosition_x003E_k__BackingField dataType="Struct" type="Duality.Vector3">
-                                        <X dataType="Float">568.5</X>
+                                        <X dataType="Float">332</X>
                                         <Y dataType="Float">40</Y>
                                         <Z dataType="Float">0</Z>
                                       </_x003C_ContentPosition_x003E_k__BackingField>
@@ -2381,7 +2358,7 @@
                                       <_x003C_Depth_x003E_k__BackingField dataType="Float">2</_x003C_Depth_x003E_k__BackingField>
                                       <_x003C_DepthOffset_x003E_k__BackingField dataType="Float">2</_x003C_DepthOffset_x003E_k__BackingField>
                                       <_x003C_Position_x003E_k__BackingField dataType="Struct" type="Duality.Vector3">
-                                        <X dataType="Float">548.5</X>
+                                        <X dataType="Float">312</X>
                                         <Y dataType="Float">20</Y>
                                         <Z dataType="Float">0</Z>
                                       </_x003C_Position_x003E_k__BackingField>
@@ -2523,12 +2500,12 @@
                                     <gameobj dataType="ObjectRef">931217131</gameobj>
                                     <ignoreParent dataType="Bool">false</ignoreParent>
                                     <pos dataType="Struct" type="Duality.Vector3">
-                                      <X dataType="Float">580.5</X>
+                                      <X dataType="Float">344</X>
                                       <Y dataType="Float">0</Y>
                                       <Z dataType="Float">0</Z>
                                     </pos>
                                     <posAbs dataType="Struct" type="Duality.Vector3">
-                                      <X dataType="Float">600.5</X>
+                                      <X dataType="Float">364</X>
                                       <Y dataType="Float">20</Y>
                                       <Z dataType="Float">0</Z>
                                     </posAbs>
@@ -2551,7 +2528,7 @@
                                     <pixelGrid dataType="Bool">false</pixelGrid>
                                     <rect dataType="Struct" type="Duality.Rect">
                                       <H dataType="Float">37</H>
-                                      <W dataType="Float">216.5</W>
+                                      <W dataType="Float">20</W>
                                       <X dataType="Float">10</X>
                                       <Y dataType="Float">10</Y>
                                     </rect>
@@ -2568,9 +2545,9 @@
                                       <Y dataType="Float">20</Y>
                                       <Z dataType="Float">0</Z>
                                     </_offset>
-                                    <_render dataType="Bool">true</_render>
+                                    <_render dataType="Bool">false</_render>
                                     <_size dataType="Struct" type="Duality.Vector2">
-                                      <X dataType="Float">32</X>
+                                      <X dataType="Float">0</X>
                                       <Y dataType="Float">17</Y>
                                     </_size>
                                     <active dataType="Bool">true</active>
@@ -2595,7 +2572,7 @@
                                       <icons />
                                       <lineAlign dataType="Enum" type="Duality.Alignment" name="Left" value="1" />
                                       <maxHeight dataType="Int">17</maxHeight>
-                                      <maxWidth dataType="Int">32</maxWidth>
+                                      <maxWidth dataType="Int">0</maxWidth>
                                       <sourceText dataType="String">8888</sourceText>
                                       <wrapMode dataType="Enum" type="Duality.Drawing.FormattedText+WrapMode" name="Word" value="1" />
                                     </text>
@@ -2605,45 +2582,45 @@
                                     <_dimensions dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Parameters.Dimensions" id="1740139287">
                                       <_layoutDepthOffset dataType="Float">2</_layoutDepthOffset>
                                       <_layoutPosition dataType="Struct" type="Duality.Vector3">
-                                        <X dataType="Float">600.5</X>
+                                        <X dataType="Float">364</X>
                                         <Y dataType="Float">20</Y>
                                         <Z dataType="Float">0</Z>
                                       </_layoutPosition>
                                       <_layoutSize dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">236.5</X>
+                                        <X dataType="Float">40</X>
                                         <Y dataType="Float">57</Y>
                                       </_layoutSize>
                                       <_x003C_BackgroundDepth_x003E_k__BackingField dataType="Float">1</_x003C_BackgroundDepth_x003E_k__BackingField>
                                       <_x003C_BackgroundDepthOffset_x003E_k__BackingField dataType="Float">2</_x003C_BackgroundDepthOffset_x003E_k__BackingField>
                                       <_x003C_BackgroundPosition_x003E_k__BackingField dataType="Struct" type="Duality.Vector3">
-                                        <X dataType="Float">610.5</X>
+                                        <X dataType="Float">374</X>
                                         <Y dataType="Float">30</Y>
                                         <Z dataType="Float">0</Z>
                                       </_x003C_BackgroundPosition_x003E_k__BackingField>
                                       <_x003C_BackgroundSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">216.5</X>
+                                        <X dataType="Float">20</X>
                                         <Y dataType="Float">37</Y>
                                       </_x003C_BackgroundSize_x003E_k__BackingField>
                                       <_x003C_ContentDepth_x003E_k__BackingField dataType="Float">1</_x003C_ContentDepth_x003E_k__BackingField>
                                       <_x003C_ContentDepthOffset_x003E_k__BackingField dataType="Float">1</_x003C_ContentDepthOffset_x003E_k__BackingField>
                                       <_x003C_ContentPosition_x003E_k__BackingField dataType="Struct" type="Duality.Vector3">
-                                        <X dataType="Float">620.5</X>
+                                        <X dataType="Float">384</X>
                                         <Y dataType="Float">40</Y>
                                         <Z dataType="Float">0</Z>
                                       </_x003C_ContentPosition_x003E_k__BackingField>
                                       <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">32</X>
+                                        <X dataType="Float">0</X>
                                         <Y dataType="Float">17</Y>
                                       </_x003C_ContentSize_x003E_k__BackingField>
                                       <_x003C_Depth_x003E_k__BackingField dataType="Float">2</_x003C_Depth_x003E_k__BackingField>
                                       <_x003C_DepthOffset_x003E_k__BackingField dataType="Float">2</_x003C_DepthOffset_x003E_k__BackingField>
                                       <_x003C_Position_x003E_k__BackingField dataType="Struct" type="Duality.Vector3">
-                                        <X dataType="Float">600.5</X>
+                                        <X dataType="Float">364</X>
                                         <Y dataType="Float">20</Y>
                                         <Z dataType="Float">0</Z>
                                       </_x003C_Position_x003E_k__BackingField>
                                       <_x003C_Size_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                        <X dataType="Float">236.5</X>
+                                        <X dataType="Float">40</X>
                                         <Y dataType="Float">57</Y>
                                       </_x003C_Size_x003E_k__BackingField>
                                       <_x003C_UseLayoutInfo_x003E_k__BackingField dataType="Bool">true</_x003C_UseLayoutInfo_x003E_k__BackingField>
@@ -3621,7 +3598,7 @@
                               <pixelGrid dataType="Bool">false</pixelGrid>
                               <rect dataType="Struct" type="Duality.Rect">
                                 <H dataType="Float">57</H>
-                                <W dataType="Float">817</W>
+                                <W dataType="Float">0</W>
                                 <X dataType="Float">0</X>
                                 <Y dataType="Float">0</Y>
                               </rect>
@@ -3643,7 +3620,7 @@
                                   <Z dataType="Float">0</Z>
                                 </_layoutPosition>
                                 <_layoutSize dataType="Struct" type="Duality.Vector2">
-                                  <X dataType="Float">817</X>
+                                  <X dataType="Float">0</X>
                                   <Y dataType="Float">57</Y>
                                 </_layoutSize>
                                 <_x003C_BackgroundDepth_x003E_k__BackingField dataType="Float">1</_x003C_BackgroundDepth_x003E_k__BackingField>
@@ -3654,7 +3631,7 @@
                                   <Z dataType="Float">0</Z>
                                 </_x003C_BackgroundPosition_x003E_k__BackingField>
                                 <_x003C_BackgroundSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                  <X dataType="Float">817</X>
+                                  <X dataType="Float">0</X>
                                   <Y dataType="Float">57</Y>
                                 </_x003C_BackgroundSize_x003E_k__BackingField>
                                 <_x003C_ContentDepth_x003E_k__BackingField dataType="Float">2</_x003C_ContentDepth_x003E_k__BackingField>
@@ -3665,7 +3642,7 @@
                                   <Z dataType="Float">0</Z>
                                 </_x003C_ContentPosition_x003E_k__BackingField>
                                 <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                  <X dataType="Float">817</X>
+                                  <X dataType="Float">0</X>
                                   <Y dataType="Float">57</Y>
                                 </_x003C_ContentSize_x003E_k__BackingField>
                                 <_x003C_Depth_x003E_k__BackingField dataType="Float">3</_x003C_Depth_x003E_k__BackingField>
@@ -3676,7 +3653,7 @@
                                   <Z dataType="Float">0</Z>
                                 </_x003C_Position_x003E_k__BackingField>
                                 <_x003C_Size_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                                  <X dataType="Float">817</X>
+                                  <X dataType="Float">0</X>
                                   <Y dataType="Float">57</Y>
                                 </_x003C_Size_x003E_k__BackingField>
                                 <_x003C_UseLayoutInfo_x003E_k__BackingField dataType="Bool">true</_x003C_UseLayoutInfo_x003E_k__BackingField>
@@ -3804,8 +3781,8 @@
                         <offset dataType="Float">4</offset>
                         <pixelGrid dataType="Bool">false</pixelGrid>
                         <rect dataType="Struct" type="Duality.Rect">
-                          <H dataType="Float">663</H>
-                          <W dataType="Float">817</W>
+                          <H dataType="Float">0</H>
+                          <W dataType="Float">0</W>
                           <X dataType="Float">20</X>
                           <Y dataType="Float">20</Y>
                         </rect>
@@ -3823,8 +3800,8 @@
                           <_layoutDepthOffset dataType="Float">4</_layoutDepthOffset>
                           <_layoutPosition dataType="Struct" type="Duality.Vector3" />
                           <_layoutSize dataType="Struct" type="Duality.Vector2">
-                            <X dataType="Float">857</X>
-                            <Y dataType="Float">703</Y>
+                            <X dataType="Float">40</X>
+                            <Y dataType="Float">40</Y>
                           </_layoutSize>
                           <_x003C_BackgroundDepth_x003E_k__BackingField dataType="Float">1</_x003C_BackgroundDepth_x003E_k__BackingField>
                           <_x003C_BackgroundDepthOffset_x003E_k__BackingField dataType="Float">4</_x003C_BackgroundDepthOffset_x003E_k__BackingField>
@@ -3833,10 +3810,7 @@
                             <Y dataType="Float">20</Y>
                             <Z dataType="Float">0</Z>
                           </_x003C_BackgroundPosition_x003E_k__BackingField>
-                          <_x003C_BackgroundSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                            <X dataType="Float">817</X>
-                            <Y dataType="Float">663</Y>
-                          </_x003C_BackgroundSize_x003E_k__BackingField>
+                          <_x003C_BackgroundSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2" />
                           <_x003C_ContentDepth_x003E_k__BackingField dataType="Float">3</_x003C_ContentDepth_x003E_k__BackingField>
                           <_x003C_ContentDepthOffset_x003E_k__BackingField dataType="Float">3</_x003C_ContentDepthOffset_x003E_k__BackingField>
                           <_x003C_ContentPosition_x003E_k__BackingField dataType="Struct" type="Duality.Vector3">
@@ -3844,16 +3818,13 @@
                             <Y dataType="Float">20</Y>
                             <Z dataType="Float">0</Z>
                           </_x003C_ContentPosition_x003E_k__BackingField>
-                          <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                            <X dataType="Float">817</X>
-                            <Y dataType="Float">663</Y>
-                          </_x003C_ContentSize_x003E_k__BackingField>
+                          <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2" />
                           <_x003C_Depth_x003E_k__BackingField dataType="Float">4</_x003C_Depth_x003E_k__BackingField>
                           <_x003C_DepthOffset_x003E_k__BackingField dataType="Float">4</_x003C_DepthOffset_x003E_k__BackingField>
                           <_x003C_Position_x003E_k__BackingField dataType="Struct" type="Duality.Vector3" />
                           <_x003C_Size_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                            <X dataType="Float">857</X>
-                            <Y dataType="Float">703</Y>
+                            <X dataType="Float">40</X>
+                            <Y dataType="Float">40</Y>
                           </_x003C_Size_x003E_k__BackingField>
                           <_x003C_UseLayoutInfo_x003E_k__BackingField dataType="Bool">true</_x003C_UseLayoutInfo_x003E_k__BackingField>
                         </_dimensions>
@@ -4001,12 +3972,7 @@
                   <gameobj dataType="ObjectRef">4073274946</gameobj>
                   <offset dataType="Float">4</offset>
                   <pixelGrid dataType="Bool">false</pixelGrid>
-                  <rect dataType="Struct" type="Duality.Rect">
-                    <H dataType="Float">703</H>
-                    <W dataType="Float">857</W>
-                    <X dataType="Float">0</X>
-                    <Y dataType="Float">0</Y>
-                  </rect>
+                  <rect dataType="Struct" type="Duality.Rect" />
                   <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
                   <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
                     <contentPath dataType="String">Default:Material:SolidWhite</contentPath>
@@ -4024,24 +3990,15 @@
                     <_x003C_BackgroundDepth_x003E_k__BackingField dataType="Float">1</_x003C_BackgroundDepth_x003E_k__BackingField>
                     <_x003C_BackgroundDepthOffset_x003E_k__BackingField dataType="Float">4</_x003C_BackgroundDepthOffset_x003E_k__BackingField>
                     <_x003C_BackgroundPosition_x003E_k__BackingField dataType="Struct" type="Duality.Vector3" />
-                    <_x003C_BackgroundSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                      <X dataType="Float">857</X>
-                      <Y dataType="Float">703</Y>
-                    </_x003C_BackgroundSize_x003E_k__BackingField>
+                    <_x003C_BackgroundSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2" />
                     <_x003C_ContentDepth_x003E_k__BackingField dataType="Float">4</_x003C_ContentDepth_x003E_k__BackingField>
                     <_x003C_ContentDepthOffset_x003E_k__BackingField dataType="Float">3</_x003C_ContentDepthOffset_x003E_k__BackingField>
                     <_x003C_ContentPosition_x003E_k__BackingField dataType="Struct" type="Duality.Vector3" />
-                    <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                      <X dataType="Float">857</X>
-                      <Y dataType="Float">703</Y>
-                    </_x003C_ContentSize_x003E_k__BackingField>
+                    <_x003C_ContentSize_x003E_k__BackingField dataType="Struct" type="Duality.Vector2" />
                     <_x003C_Depth_x003E_k__BackingField dataType="Float">5</_x003C_Depth_x003E_k__BackingField>
                     <_x003C_DepthOffset_x003E_k__BackingField dataType="Float">4</_x003C_DepthOffset_x003E_k__BackingField>
                     <_x003C_Position_x003E_k__BackingField dataType="Struct" type="Duality.Vector3" />
-                    <_x003C_Size_x003E_k__BackingField dataType="Struct" type="Duality.Vector2">
-                      <X dataType="Float">857</X>
-                      <Y dataType="Float">703</Y>
-                    </_x003C_Size_x003E_k__BackingField>
+                    <_x003C_Size_x003E_k__BackingField dataType="Struct" type="Duality.Vector2" />
                     <_x003C_UseLayoutInfo_x003E_k__BackingField dataType="Bool">false</_x003C_UseLayoutInfo_x003E_k__BackingField>
                   </_dimensions>
                   <_direction dataType="Enum" type="Soulstone.Duality.Plugins.Blue.Components.FlexDirection" name="Row" value="0" />
@@ -4135,8 +4092,8 @@
       </children>
       <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="2355682506">
         <_items dataType="Array" type="Duality.Component[]" id="109672712" length="4">
-          <item dataType="Struct" type="Soulstone.Duality.Plugins.Arke.Testing.TestContext" id="4124556246">
-            <_x003C_Console_x003E_k__BackingField dataType="ObjectRef">1575495175</_x003C_Console_x003E_k__BackingField>
+          <item dataType="Struct" type="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.TestContext" id="557618889">
+            <_x003C_Console_x003E_k__BackingField dataType="ObjectRef">2303525114</_x003C_Console_x003E_k__BackingField>
             <_x003C_MyColor_x003E_k__BackingField dataType="Struct" type="Duality.Drawing.ColorRgba">
               <A dataType="Byte">255</A>
               <B dataType="Byte">51</B>
@@ -4165,10 +4122,10 @@
         <header />
         <body>
           <keys dataType="Array" type="System.Object[]" id="976491040">
-            <item dataType="Type" id="779580380" value="Soulstone.Duality.Plugins.Arke.Testing.TestContext" />
+            <item dataType="Type" id="779580380" value="Soulstone.Duality.Plugins.Atlas.Lidgren.Testing.TestContext" />
           </keys>
           <values dataType="Array" type="System.Object[]" id="76741518">
-            <item dataType="ObjectRef">4124556246</item>
+            <item dataType="ObjectRef">557618889</item>
           </values>
         </body>
       </compMap>
