@@ -100,8 +100,8 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
             _info.Clear();
             _connections.Clear();
 
-            _peer.Shutdown(ByeMessages.Quit);
-            _peer = null;
+
+            Stop(ByeMessages.Quit);
         }
 
         protected void Stop(string reason = null)
@@ -114,8 +114,8 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
             }
 
             _peer.Shutdown(reason ?? ByeMessages.UnexpectedError);
+            AtlasApp.NetworkLog.Write($"Shutting down {_peer.GetType().Name}");
             _peer = null;
-            Logs.Game.Write($"Shutting down {_peer.GetType().Name}");
         }
 
         protected bool Start(NetPeer peer, string name)
@@ -133,12 +133,12 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
             try
             {
                 _peer.Start();
-                Logs.Game.Write($"Starting {_peer.GetType().Name} on {endPoint}");
+                AtlasApp.NetworkLog.Write($"Starting {_peer.GetType().Name} on {endPoint}");
                 return true;
             }
             catch (Exception e)
             {
-                Logs.Game.WriteError($"Failed to start {_peer.GetType().Name}: [{e.GetType().Name}] {e.Message}");
+                AtlasApp.NetworkLog.WriteError($"Failed to start {_peer.GetType().Name}: [{e.GetType().Name}] {e.Message}");
                 _peer.Shutdown(ByeMessages.UnexpectedError);
                 _peer = null;
             }
@@ -175,7 +175,7 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
         {
             if (message.SenderEndPoint?.Address == null)
             {
-                Logs.Game.WriteWarning("Recieved message without sender info.");
+                AtlasApp.NetworkLog.WriteWarning("Recieved message without sender info.");
                 return;
             }
 
@@ -190,7 +190,7 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
                     break;
 
                 default:
-                    Logs.Game.WriteWarning("Recieved message of unexpected type: " + message.MessageType.ToString());
+                    AtlasApp.NetworkLog.WriteWarning("Recieved message of unexpected type: " + message.MessageType.ToString());
                     break;
             }
         }
@@ -218,14 +218,14 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
                     var senderInfo = new PeerInfo(initialInfo.ID, initialInfo.Name, endPoint);
                     _info.Add(endPoint, senderInfo);
 
-                    Logs.Game.Write($"Identified {endPoint}: {initialInfo.Name} ({initialInfo.ID})");
+                    AtlasApp.NetworkLog.Write($"Identified {endPoint}: {initialInfo.Name} ({initialInfo.ID})");
 
                     OnIdentified(senderInfo);
                 }
                 else
                 {
                     var text = Encoding.UTF8.GetString(data);
-                    Logs.Game.WriteWarning($"Recieved data from unidentified sender {endPoint}: {text}");
+                    AtlasApp.NetworkLog.WriteWarning($"Recieved data from unidentified sender {endPoint}: {text}");
                 }
             }
         }
@@ -235,7 +235,7 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
             var status = (NetConnectionStatus)message.ReadByte();
             var endPoint = Conversions.ToArke(message.SenderEndPoint);
 
-            Logs.Game.Write($"[{message.SenderEndPoint}] Status Changed: {status}");
+            AtlasApp.NetworkLog.Write($"[{message.SenderEndPoint}] Status Changed: {status}");
 
             switch (message.SenderConnection.Status)
             {
@@ -261,13 +261,14 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
                     
                     break;
 
-                // We're logging a message for this above, we can ignore it here
+                // We're logging a message for these above, we can ignore them here
                 // The other message types could do with the same, though I'm curious in that I haven't seen
                 // them used yet.
                 case NetConnectionStatus.InitiatedConnect: break;
+                case NetConnectionStatus.RespondedConnect: break;
 
                 default:
-                    Logs.Game.WriteWarning($"Unhandled connection status: {message.SenderConnection.Status}");
+                    AtlasApp.NetworkLog.WriteWarning($"Unhandled connection status: {message.SenderConnection.Status}");
                     break;
             }
         }
@@ -311,7 +312,7 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
         {
             if (!Connected)
             {
-                Logs.Game.WriteWarning("Cannot send messages while not connected");
+                AtlasApp.NetworkLog.WriteWarning("Cannot send messages while not connected");
                 return;
             }
 
