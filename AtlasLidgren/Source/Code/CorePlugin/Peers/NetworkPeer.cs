@@ -114,7 +114,7 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
             }
 
             _peer.Shutdown(reason ?? ByeMessages.UnexpectedError);
-            AtlasApp.NetworkLog.Write($"Shutting down {_peer.GetType().Name}");
+            AtlasLogs.Network.Write($"Shutting down {_peer.GetType().Name}");
             _peer = null;
         }
 
@@ -133,12 +133,12 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
             try
             {
                 _peer.Start();
-                AtlasApp.NetworkLog.Write($"Starting {_peer.GetType().Name} on {endPoint}");
+                AtlasLogs.Network.Write($"Starting {_peer.GetType().Name} on {endPoint}");
                 return true;
             }
             catch (Exception e)
             {
-                AtlasApp.NetworkLog.WriteError($"Failed to start {_peer.GetType().Name}: [{e.GetType().Name}] {e.Message}");
+                AtlasLogs.Network.WriteError($"Failed to start {_peer.GetType().Name}: [{e.GetType().Name}] {e.Message}");
                 _peer.Shutdown(ByeMessages.UnexpectedError);
                 _peer = null;
             }
@@ -175,7 +175,7 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
         {
             if (message.SenderEndPoint?.Address == null)
             {
-                AtlasApp.NetworkLog.WriteWarning("Recieved message without sender info.");
+                AtlasLogs.Network.WriteWarning("Recieved message without sender info.");
                 return;
             }
 
@@ -190,7 +190,7 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
                     break;
 
                 default:
-                    AtlasApp.NetworkLog.WriteWarning("Recieved message of unexpected type: " + message.MessageType.ToString());
+                    AtlasLogs.Network.WriteWarning("Recieved message of unexpected type: " + message.MessageType.ToString());
                     break;
             }
         }
@@ -218,14 +218,14 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
                     var senderInfo = new PeerInfo(initialInfo.ID, initialInfo.Name, endPoint);
                     _info.Add(endPoint, senderInfo);
 
-                    AtlasApp.NetworkLog.Write($"Identified {endPoint}: {initialInfo.Name} ({initialInfo.ID})");
+                    AtlasLogs.Network.Write($"Identified {endPoint}: {initialInfo.Name} ({initialInfo.ID})");
 
                     OnIdentified(senderInfo);
                 }
                 else
                 {
                     var text = Encoding.UTF8.GetString(data);
-                    AtlasApp.NetworkLog.WriteWarning($"Recieved data from unidentified sender {endPoint}: {text}");
+                    AtlasLogs.Network.WriteWarning($"Recieved data from unidentified sender {endPoint}: {text}");
                 }
             }
         }
@@ -235,7 +235,7 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
             var status = (NetConnectionStatus)message.ReadByte();
             var endPoint = Conversions.ToArke(message.SenderEndPoint);
 
-            AtlasApp.NetworkLog.Write($"[{message.SenderEndPoint}] Status Changed: {status}");
+            AtlasLogs.Network.Write($"[{message.SenderEndPoint}] Status Changed: {status}");
 
             switch (message.SenderConnection.Status)
             {
@@ -268,7 +268,7 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
                 case NetConnectionStatus.RespondedConnect: break;
 
                 default:
-                    AtlasApp.NetworkLog.WriteWarning($"Unhandled connection status: {message.SenderConnection.Status}");
+                    AtlasLogs.Network.WriteWarning($"Unhandled connection status: {message.SenderConnection.Status}");
                     break;
             }
         }
@@ -312,7 +312,7 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
         {
             if (!Connected)
             {
-                AtlasApp.NetworkLog.WriteWarning("Cannot send messages while not connected");
+                AtlasLogs.Network.WriteWarning("Cannot send messages while not connected");
                 return;
             }
 

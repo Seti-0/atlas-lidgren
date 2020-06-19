@@ -38,14 +38,14 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
         {
             if (Joining)
             {
-                AtlasApp.NetworkLog.WriteWarning("Started to join while joining already");
-                AtlasApp.NetworkLog.Write("Interrupting previous Join attempt");
+                AtlasLogs.Network.WriteWarning("Started to join while joining already");
+                AtlasLogs.Network.Write("Interrupting previous Join attempt");
                 Quit();
             }
 
             if (!Idle)
             {
-                AtlasApp.NetworkLog.WriteWarning("Must be idle to start joining");
+                AtlasLogs.Network.WriteWarning("Must be idle to start joining");
                 return false;
             }
 

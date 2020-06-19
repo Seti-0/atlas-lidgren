@@ -36,13 +36,13 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
         {
             if (Hosting)
             {
-                AtlasApp.NetworkLog.WriteWarning("Cannot start hosting while hosting already.");
+                AtlasLogs.Network.WriteWarning("Cannot start hosting while hosting already.");
                 return false;
             }
 
             if (!Idle)
             {
-                AtlasApp.NetworkLog.WriteWarning("Must be idle to start hosting.");
+                AtlasLogs.Network.WriteWarning("Must be idle to start hosting.");
                 return false;
             }
 
