@@ -54,8 +54,8 @@
     <Reference Include="DualityPrimitives">
       <HintPath>..\..\..\DualityPrimitives.dll</HintPath>
     </Reference>
-    <Reference Include="Lidgren.Network">
-      <HintPath>..\..\..\Plugins\Lidgren.Network.dll</HintPath>
+    <Reference Include="Lidgren.Network.MultiTarget">
+      <HintPath>..\..\..\Plugins\Lidgren.Network.MultiTarget.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>

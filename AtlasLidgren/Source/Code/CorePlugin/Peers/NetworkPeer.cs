@@ -11,6 +11,8 @@ using Duality;
 
 using Soulstone.Duality.Plugins.Atlas.Network;
 using Soulstone.Duality.Plugins.Atlas.Lidgren.Utility;
+using System.Diagnostics;
+using System.Runtime.Remoting.Messaging;
 
 namespace Soulstone.Duality.Plugins.Atlas.Lidgren
 {
@@ -28,6 +30,8 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
             public Guid ID;
             public string Name;
         }
+
+        public DebugOptions DebugOptions { get; set; }
 
         public PeerInfo Info { private set; get; }
 
@@ -148,12 +152,26 @@ namespace Soulstone.Duality.Plugins.Atlas.Lidgren
 
         public void Update()
         {
-            int parseLimit = Properties.Settings.Default.ParseLimit;
-
-            int count = 0;
-
             if (_peer == null)
                 return;
+
+            if (DebugOptions.Enable)
+            {
+                _peer.Configuration.SimulatedDuplicatesChance = DebugOptions.SimulatedDuplicates;
+                _peer.Configuration.SimulatedLoss = DebugOptions.SimulatedLoss;
+                _peer.Configuration.SimulatedMinimumLatency = DebugOptions.SimulatedFixedLatency;
+                _peer.Configuration.SimulatedRandomLatency = DebugOptions.SimulatedRandomLatency;
+            }
+            else
+            {
+                _peer.Configuration.SimulatedDuplicatesChance = 0;
+                _peer.Configuration.SimulatedLoss = 0;
+                _peer.Configuration.SimulatedMinimumLatency = 0;
+                _peer.Configuration.SimulatedRandomLatency = 0;
+            }
+
+            int parseLimit = Properties.Settings.Default.ParseLimit;
+            int count = 0;
 
             while (true)
             {
